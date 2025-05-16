@@ -55,9 +55,9 @@ public class HandTracking : MonoBehaviour
         {
             for (int i = 0; i < 21; i++)
             {
-                float x = -(7 - handData.Left[i * 3] / offset );
-                float y = (handData.Left[i * 3 + 1] / offset );
-                float z = (handData.Left[i * 3 + 2] / offset );
+                float x = -(7 - handData.Left[i * 3] / offset + 6);
+                float y = (handData.Left[i * 3 + 1] / offset + 5);
+                float z = (handData.Left[i * 3 + 2] / offset - 10);
 
                 Vector3 rawPos = new Vector3(x, y, z);
                 Vector3 rotatedPos = handRotation * rawPos;
@@ -72,9 +72,9 @@ public class HandTracking : MonoBehaviour
         {
             for (int i = 0; i < 21; i++)
             {
-                float x = -(7 - handData.Right[i * 3] / offset);
-                float y = (handData.Right[i * 3 + 1] / offset);
-                float z = (handData.Right[i * 3 + 2] / offset);
+                float x = -(7 - handData.Right[i * 3] / offset + 6);
+                float y = (handData.Right[i * 3 + 1] / offset + 5);
+                float z = (handData.Right[i * 3 + 2] / offset - 10);
 
                 Vector3 rawPos = new Vector3(x, y, z);
                 Vector3 rotatedPos = handRotation * rawPos;
