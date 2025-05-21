@@ -1,6 +1,7 @@
-matin-ghorbani / 3D-Hand-Tracking <- 이 사람 거 수정 해서 사용함. 아직 변경 중
+# unity 3d hand
 
-현재 수정 사항 : 
-- 양손
-- 손 방향 수정
-- unity 실행 시 python (main.py) 실행
+## about
+
+This project is a modified version of [matin-ghorbani/3D-Hand-Tracking](https://github.com/matin-ghorbani/3D-Hand-Tracking).
+Original work by Matin Ghorbani.  
+Modified and maintained by Park Changyeong (amuileum07).
